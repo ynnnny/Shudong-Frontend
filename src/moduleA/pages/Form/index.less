@@ -1,0 +1,148 @@
+.Form{
+    position: relative;
+    height: auto;
+    background-color: #76A9FF;
+
+    .f_box{
+        width: 100%;
+        padding-top: 30px;
+        margin-top: 2vh;
+        min-height: 80vh;
+        background-color: white;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        padding-bottom: 2vh;
+    }
+
+    .next{
+        display: none;
+    }
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+  //  background-color:#e16531 /* #f4bb2a */;
+}
+.status {
+    position: absolute;
+    bottom: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3vh;
+    font-weight: bold;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .statusImage {
+        width: 6vh;
+        height: 6vh;
+        margin-right: 4vh;
+    }
+    .status-text {
+        width: 70vw;
+        text-align: center;
+    }
+}
+.Form_i{
+    margin-bottom: 20px;
+
+    Text{
+        margin: 0 20px;
+        font-size: 2vh;
+    }
+
+    Textarea{
+        margin: 20px;
+        width: 86vw;
+        border: 1px solid rgb(183, 183, 183);
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+}
+
+.resume {
+    padding: 20px;
+
+    .title {
+        font-size: 2.5vh;
+        font-weight: 400;
+    }
+
+    .add::before {
+        content: '+';
+        font-size: 5vw;
+        margin-right: 10px;
+    }
+
+    .add {
+        color: #76A9FF;
+    }
+
+    .card {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center; /* 水平居中 */
+
+        View{
+            text-align: center;
+        }
+
+        .time{
+            flex: 1;
+        }
+
+        .place{
+            flex: 2;
+        }
+
+        .duty{
+            flex: 1;
+        }
+    }
+}
+
+.file_display{
+
+    .photo{
+        font-size: 2.5vh;
+        font-weight: 400;
+        margin-left: 20px;
+        float: left;
+        width: 30vw;
+    }
+
+
+    display: flex;
+
+    .display{
+        width: 32vw;
+        height: 32vw;
+        text-align: center;
+        margin: 50px 0;
+
+        View{
+            text-align: center;
+            margin: 10px 2.5vw;
+            width: 32vw;
+            height: 32vw;
+            object-fit: cover;
+
+            Text{
+                margin-left: 10vw;
+            }
+
+            Image{
+                height: 32vw;
+                width: 32vw;
+            }
+        }
+    }
+}
